@@ -2,8 +2,8 @@
 
 A Kubernetes cluster administrator can install and start the Splunk Operator for cluster-wide by running:
 
-#Step1 kubectl apply -f splunk-operator.yaml --server-side  --force-conflicts
+                 kubectl apply -f splunk-operator.yaml --server-side  --force-conflicts
 
-#Step2 kubectl apply -n splunk-operator -f splunk-enterprise.yaml
+                    kubectl apply -n splunk-operator -f splunk-enterprise.yaml
 
 The enterprise.splunk.com/delete-pvc finalizer is optional, and tells the Splunk Operator to remove any Kubernetes Persistent Volumes associated with the instance if you delete the custom resource(CR).
